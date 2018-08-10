@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+      {{!-- import materialize css --}}
+      <link rel='stylesheet' href='/stylesheets/materialize.css' />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel='stylesheet' href='/stylesheets/animate.css' />
+      <link rel="stylesheet" href="/stylesheets/config.css"/>
+      <link rel='stylesheet' href='/stylesheets/main.css' />
+      {{!-- load chart.js cdn file --}}
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+          {{!-- import materialize js --}}
+        <script src="/javascripts/materialize.js"></script>
+  </head>
+  <body>
+    <container-app class="default-properties animated fadeIn full-height">
+        {{!-- header of page --}}
+        <dashboard-header class="animated slideInDown"></dashboard-header>
+        {{!-- end header of page --}}
+        {{!-- container of sidebar and page --}}
+        <container-page>
+          <dashboard-sidebar class="animated slideInLeft"></dashboard-sidebar>
+          <main>
+            {{{body}}}
+          </main>
+        </container-page>
+          {{!-- end container of sidebar and page --}}
+    </container-app>
+        <script src="/javascripts/languageConfig.js"></script>
+        <script type="text/javascript" src="/javascripts/dist/dist.bundle.js"></script>
+        <script src="/javascripts/main.js"></script>
+  </body>
+</html>

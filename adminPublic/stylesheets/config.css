@@ -1,0 +1,14 @@
+:root{
+	--panels-bg-color: #64b5f6;
+	--panels-text-color: white;
+}
+
+.panels-bg-color{
+	background-color: var(--panels-bg-color);
+}
+.panels-text-color {
+	color: var(--panels-text-color);
+}
+.panels-bg-color-important{
+	background-color: var(--panels-bg-color) !important;
+}

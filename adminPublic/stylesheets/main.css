@@ -1,0 +1,264 @@
+/* define the main variables */
+
+:root{
+  --main-bg-color: #2c2f43;
+  --second-bg-color: #232638;
+  --third-bg-color: #393b48;
+  --default-bg-color: #eceef2;
+  --white-bg-color: #fff;
+  --main-font-color: #393b48;
+  --btns-main-color: #b5b4c2;
+  --of-white-color: rgb(245, 245, 245);
+  --grey-color: #8a8a8a;
+}
+/* end defining the main variables */
+
+body {
+  padding: 0;
+  margin:0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: var(--default-bg-color);
+  overflow-x:hidden;
+}
+* {
+  margin:0;
+}
+container-app{
+  display:none;
+  overflow: hidden;
+  animation-delay: 1.5s;
+}
+
+container-app container-page{
+  display: block;
+  margin: 50px 0 0 0;
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  /* grid-template-columns: 1.1fr 5fr; */
+  /* grid-gap:20px; */
+}
+container-app container-page dashboard-sidebar, container-app container-page main{
+  display:inline-block;
+  transition:1.5s;
+}
+container-app container-page dashboard-sidebar{
+  width:21%;
+  height:100%;
+  top: 0;
+    left: 0;
+  float:left;
+  margin-left:0px;
+  transition: 2.5s;
+  overflow: hidden;
+  animation-delay: 1.5s;
+  position:fixed;
+  z-index:2;
+}
+container-app container-page main{
+  width:79%;
+  margin-bottom:20px;
+  position: relative;
+  z-index:1;
+  left:21%;
+}
+/* global classess */
+.main-bg-color {
+  background: var(--main-bg-color);
+}
+.second-bg-color {
+  background: var(--second-bg-color);
+}
+.third-bg-color {
+  background: var(--third-bg-color);
+}
+.white-bg-color {
+  background: var(--white-bg-color);
+}
+.default-bg-color {
+  background: var(--default-bg-color);
+}
+.main-font-color {
+  color: var(--main-font-color) !important;
+}
+.btns-main-color {
+  color: var(--btns-main-color) !important;
+}
+.off-white-bg-color{
+  background: var(--of-white-color);
+}
+.grey-color{
+  color: var(--grey-color);
+}
+.default-margin{
+  margin-top:10px;
+  margin-bottom:30px;
+}
+.default-properties{
+  display:block;
+  height:auto;
+  width:100%;
+}
+.default-padding{
+  padding:15px;
+  padding-left: 15px !important;
+}
+.small-padding{
+  padding:5px;
+}
+.responsive-image{
+  height: 100%;
+  width: 100%;
+}
+.display-inline-block{
+  display: inline-block;
+}
+.app-loader{
+  margin:auto;
+  height: 300px;
+  width:300px;
+  margin-top:120px;
+  display:block;
+  /* animation-fill-mode: backwards; */
+  /* animation-iteration-count: infinite; */
+}
+.loader {
+  border: 6px solid #d6d6d6;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.width-auto{
+  width:auto;
+}
+.float-right{
+  float:right;
+}
+.float-right-important{
+  float:right !important;
+}
+.float-left{
+  float:left;
+}
+.float-unset{
+  float:unset;
+}
+.full-width{
+  width:100%;
+}
+.margin-auto{
+  margin:auto;
+  display: block;
+}
+.full-height{
+  height:100%;
+}
+
+.margin-bottom{
+  margin-bottom: 20px;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+.underlined-link{
+  text-decoration: underline;
+}
+.hoverable-underlined{
+  cursor:pointer;
+}
+.hoverable-underlined:hover{
+  transition:.4s;
+  text-decoration: underline;
+}
+.chart-style{
+  height:300px;
+  width:100%;
+  display:block;
+}
+.auto-height{
+  height:auto !important;
+}
+strong{
+  font-size: 26px;
+}
+.no-margin{
+  margin: 0;
+}
+.default-margin-top{
+  margin-top: 15px;
+}
+.default-margin-bottom {
+  margin-bottom: 15px;
+}
+.small-margin-top {
+  margin-top: 5px;
+}
+.small-margin-bottom{
+  margin-bottom: 5px;
+}
+.default-shadow {
+  box-shadow: 1px 1px 15px 1px #cecece;
+}
+.default-input{
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #cecece;
+  padding: 10px;
+  color: rgba(0, 0, 0, .60);
+  box-shadow: 1px 1px 15px 1px #cecece;
+}
+.default-input:focus{
+  border: 1px solid #64b5f6;
+}
+.default-label{
+  font-size: 17px;
+}
+.no-maegin-bottom{
+  margin-bottom:0;
+}
+.max-width{
+  width: max-content;
+}
+/* end global classes */
+
+/* media query */
+@media(max-width:800px) {
+  container-app container-page dashboard-sidebar{
+    width:35.4%;
+  }
+  container-app container-page main{
+    width:100%;
+    left: 35.4%;
+  }
+}
+@media(max-width:500px) {
+  container-app container-page dashboard-sidebar{
+    width:45.4%;
+    margin-left:-60%;
+    /* display: none !important; */
+  }
+  container-app container-page main{
+    width: 100%;
+    left: 0;
+  }
+}
+@media(max-width:370px) {
+  container-app container-page dashboard-sidebar{
+    width:54% !important;
+    margin-left:-60%;
+  }
+  container-app container-page main{
+    width: 100%;
+    left:0;
+  }
+}
+
+/* end media query */

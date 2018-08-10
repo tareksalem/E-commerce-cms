@@ -1,0 +1,79 @@
+dashboard-sidebar{
+    display: block;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+}
+
+container-sidebar{
+    width:100%;
+    min-height:100%;
+    height:aito;
+    display:block;
+    overflow: hidden;
+}
+container-sidebar *{
+    text-transform: lowercase !important;
+}
+profile-info{
+    background: linear-gradient(to right,#626384, var(--main-bg-color));
+    min-height: 200px;
+    height:auto;
+    padding-top:40px;
+}
+container-profile-img{
+    overflow: hidden;
+    border-radius: 100%;
+    position:relative;
+    height:80px;
+    width:100%;
+    bottom:5px;
+}
+profile-info component-container admin-fast-tools{
+    margin-top:20px;
+    padding-bottom:5px;
+}
+profile-info component-container admin-fast-tools i{
+    text-align: center;
+    background: #f16192;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+    height: 60px;
+    font-size: 32px !important;
+    line-height: 60px !important;
+    width: 90%;
+}
+container-profile-img img{
+    border-radius: 100%;
+}
+container-user-dropdown .button-dropdown{
+    box-shadow:none;
+    width:100%;
+    padding-left:0;
+}
+container-user-dropdown dropdown{
+    padding:0 !important;
+}
+.dropdown-content{
+    box-shadow:1px 1px 20px .5px var(--main-bg-color) !important;
+}
+
+container-user-dropdown .button-dropdown i{
+    margin:0;
+}
+
+container-user-dropdown .dropdown-content li > a, .dropdown-content li > span{
+    color:var(--main-font-color);
+}
+container-user-dropdown .dropdown-content li > a:hover, .dropdown-content li > span:hover{
+    color:var(--white-bg-color);
+    background:var(--main-bg-color);
+    transition:.4s ease-out;
+}
+
+.material-tooltip{
+    background-color: var(--second-bg-color);
+    color:var(--white-bg-color);
+}

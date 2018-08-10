@@ -1,0 +1,21 @@
+#productspages .dropdown-content{
+	position: absolute;
+    /* top: 300px !important; */
+   	width: 200px !important;
+}
+#productspages .button-add{
+	border: 1px solid var(--panels-bg-color);
+	background: white !important;
+	transition: all .4s;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	outline: none;
+	display: block;
+	margin: auto;
+}
+
+#productspages .button-add:hover{
+	background: var(--panels-bg-color) !important;
+	color: white !important;
+}

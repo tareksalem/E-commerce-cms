@@ -1,0 +1,29 @@
+links-component .ul-links{
+    padding:1px;
+}
+links-component .ul-links li{
+    padding: 10px;
+    font-size: 17px;
+    margin: 10px 0 10px 0;
+    cursor:pointer;
+    transition: all .5s;
+}
+links-component .ul-links li a{
+    color: #cecece;
+    text-decoration:none;
+    padding-left:5px;
+}
+links-component .ul-links li a .material-icons{
+    position:relative;
+    top:7px;
+}
+links-component .ul-links li:hover{
+    border-left: 5px solid #64b5f6;
+    background:var(--second-bg-color);
+    transition:.5s ease;
+}
+.link-active{
+    border-left: 5px solid #64b5f6;
+    background:var(--second-bg-color);
+    transition:.5s ease;
+}
